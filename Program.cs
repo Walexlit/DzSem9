@@ -27,11 +27,11 @@ for (int i = 1; i <= dlin * dlin; i++)
 
 void Print(int[,] matr)
 {
-    for (int c = 0; c < matr.GetLength(0); c++)
+    for (int i = 0; i < matr.GetLength(0); i++)
     {
-        for (int d = 0; d < matr.GetLength(1); d++)
+        for (int j = 0; j < matr.GetLength(1); j++)
         {
-            Console.Write($" {matr[c, d]} ");
+            Console.Write($" {matr[i, j]} ");
         }
         Console.WriteLine();
     }
